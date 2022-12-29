@@ -128,7 +128,7 @@ def sample_histograms(fig, input_sample, problem, opts=None):
     out = []
 
     for variable in range(num_vars):
-        ax = fig.add_subplot(framing + variable)
+        ax = fig.add_subplot(1, num_vars, 1+variable)
         out.append(
             ax.hist(
                 input_sample[:, variable],
